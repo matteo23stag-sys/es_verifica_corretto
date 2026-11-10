@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef5ee;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  text-align: center;
+  color: #2e7d32;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.pulsanti {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2e7d32;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #43a047;
+}
+
+#riepilogo {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #2e7d32;
+  white-space: pre-line;   /* va a capo dove nel testo c'è \n */
+}
+
+#riepilogo:empty {
+  display: none;           /* nasconde il riquadro quando è vuoto */
+}

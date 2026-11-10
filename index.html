@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noleggio bici di Giulia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="dist/main.js" defer></script>
+</head>
+<body>
+  <h1>Noleggio bici di Giulia</h1>
+
+  <form>
+    <label for="nome">Nome del cliente</label>
+    <input type="text" id="nome">
+
+    <label for="cognome">Cognome del cliente</label>
+    <input type="text" id="cognome">
+
+    <label for="ore">Ore di noleggio (da 1 a 8)</label>
+    <input type="number" id="ore" min="1" max="8" value="1">
+
+    <label for="bici">Tipo di bici</label>
+    <select id="bici">
+      <option value="city">City bike</option>
+      <option value="mountain">Mountain bike</option>
+      <option value="ebike">E-bike</option>
+    </select>
+
+    <fieldset>
+      <legend>Tariffa</legend>
+      <label><input type="radio" name="tariffa" id="adulto" checked> Adulto</label>
+      <label><input type="radio" name="tariffa" id="ragazzo"> Ragazzo (under 14)</label>
+    </fieldset>
+
+    <label><input type="checkbox" id="casco"> Noleggio del casco</label>
+
+    <div class="pulsanti">
+      <button type="button" onclick="calcolaPrezzo()">Calcola prezzo</button>
+      <button type="button" onclick="nuovoCliente()">Nuovo cliente</button>
+    </div>
+  </form>
+
+  <div id="riepilogo"></div>
+</body>
+</html>
